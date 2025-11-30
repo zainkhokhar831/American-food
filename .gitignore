@@ -1,0 +1,6 @@
+# Node modules folder ignore karne ke liye
+node_modules/
+
+# Resource folder ke andar PSD files ignore karne ke liye
+resource/LAYOUT.psd
+resource/LAYOUT.psd

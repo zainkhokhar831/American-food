@@ -1,0 +1,18 @@
+@use './custom' as *;
+
+// IMPORT THE COMPONENTS //
+
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography';
+
+
+// IMPORT THE SECTION //
+
+@use 'sections/navbar.scss';
+@use 'sections/deals.scss';
+@use 'sections/menu.scss';
+@use 'sections/reservation.scss';
+@use 'sections/slider.scss';
+@use 'sections/footer.scss';
