@@ -1,0 +1,73 @@
+@use '../custom' as *;
+
+/* LOGO FIX */
+.logo {
+  width: 9%;
+  max-width: 120px;
+}
+
+/* NAVBAR LAYOUT FIXED */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+/* DELIVERY BOX → RIGHT SIDE ABOVE MENU */
+.delivery-box {
+  display: flex;
+  align-items: center;
+  margin-left: auto;     /* pushes to right side */
+  margin-right: 1rem;
+  position: relative;
+  top: -4px;             /* exactly like your screenshot */
+  gap: 0.5rem;
+
+  .delivery-icon {
+    width: 22px;
+  }
+
+  .delivery-text {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    color: $primary;
+  }
+}
+
+/* MENU PERFECT RIGHT */
+.menu {
+  li {
+    font-size: 1.2rem;
+    font-family: "Bebas Neue", sans-serif;
+
+    a {
+      line-height: 2rem;
+      text-transform: capitalize;
+      color: $primary;
+      font-weight: normal;
+      font-size: 1.1rem;
+      margin-right: 2rem;
+      letter-spacing: 0.2rem;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .container {
+    justify-content: space-between;
+  }
+
+  .delivery-box {
+    display: none;
+  }
+
+  .navbar-collapse {
+    padding: 1rem;
+  }
+}
