@@ -1,0 +1,12 @@
+@use "../custom" as *;
+
+.deals {
+  margin-top: 5rem;
+
+  .deals-image {
+    margin-bottom: 4rem;
+    .deals-image-2 {
+      margin-bottom: 2rem;
+    }
+  }
+}

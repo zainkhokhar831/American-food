@@ -11943,6 +11943,10 @@ textarea.form-control-lg {
 }
 
 /* LOGO */
+.navbar {
+  background-image: url(/images/intro-bg.png);
+}
+
 .logo {
   width: 15%;
 }
@@ -11998,6 +12002,16 @@ textarea.form-control-lg {
     padding: 1rem;
   }
 }
+.deals {
+  margin-top: 5rem;
+}
+.deals .deals-image {
+  margin-bottom: 4rem;
+}
+.deals .deals-image .deals-image-2 {
+  margin-bottom: 2rem;
+}
+
 .intro-section {
   position: relative;
   font-family: "Alfa Slab One", serif;

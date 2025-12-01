@@ -1,6 +1,11 @@
 @use '../custom' as *;
 
 /* LOGO */
+
+
+.navbar{
+  background-image: url(/images/intro-bg.png);
+}
 .logo {
   width: 15%;
 }
