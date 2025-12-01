@@ -10,3 +10,15 @@
     transform: translateY(0);
   }
 }
+
+@keyframes yellowGlowPulse {
+  0% {
+    filter: drop-shadow(0 0 2px rgb(202, 196, 27));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+  }
+  100% {
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+  }
+}

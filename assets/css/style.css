@@ -11870,6 +11870,17 @@ textarea.form-control-lg {
     transform: translateY(0);
   }
 }
+@keyframes yellowGlowPulse {
+  0% {
+    filter: drop-shadow(0 0 2px rgb(202, 196, 27));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+  }
+  100% {
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+  }
+}
 @media (max-width: 575.98px) {
   .btn-rounded {
     display: none;
@@ -12008,6 +12019,9 @@ textarea.form-control-lg {
 .deals .deals-image {
   margin-bottom: 4rem;
 }
+.deals .deals-image:hover {
+  animation: yellowGlowPulse 2s ease-in-out infinite;
+}
 .deals .deals-image .deals-image-2 {
   margin-bottom: 2rem;
 }
@@ -12034,7 +12048,7 @@ textarea.form-control-lg {
   position: relative;
   z-index: 2;
   width: 100%;
-  animation: floatMotion 3s ease-in-out infinite, yellowGlowPulse 2s ease-in-out infinite;
+  animation: floatMotion 3s ease-in-out infinite, 2s ease-in-out infinite;
 }
 .intro-section .price-badge {
   position: absolute;
