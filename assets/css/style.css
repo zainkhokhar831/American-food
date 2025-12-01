@@ -12042,6 +12042,102 @@ textarea.form-control-lg {
   animation: floatMotion 3s ease-in-out infinite, 2s ease-in-out infinite;
 }
 
+.reservation-subtitle {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: #3d2514;
+}
+
+.reservation-title {
+  font-family: "Alfa Slab One", serif;
+  font-size: 2.2rem;
+  color: #3d2514;
+  letter-spacing: 0.2rem;
+}
+
+.reservation-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.reservation-section .background-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+.reservation-section .form-control {
+  height: 140%;
+}
+.reservation-section .form-container {
+  position: absolute;
+  z-index: 2;
+  width: 80%;
+  text-align: center;
+}
+.reservation-section .row {
+  width: 70%;
+  margin: 10rem auto;
+}
+
+.discover-text {
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  font-family: "Bebas Neue", sans-serif;
+  color: #3b3a3a;
+}
+
+.title-text {
+  font-family: "Alfa Slab One", serif;
+  font-size: 38px;
+  color: #3d2514;
+}
+
+.desc-text {
+  color: #4a4a4a;
+  line-height: 1.7;
+}
+
+.slider-img-box img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* ====================== INDICATORS ====================== */
+/* Position left + text ke neeche */
+.carousel-indicators {
+  justify-content: flex-start !important;
+  margin-left: 50px;
+  bottom: 20px;
+}
+
+/* Indicator circles */
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: #000000 !important; /* grey piche ka color */
+}
+
+/* Active indicator yellow */
+.carousel-indicators .active {
+  background-color: #ffc045 !important;
+}
+
+/* ====================== ARROWS ====================== */
+/* Arrow buttons style */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* button width */
+  top: 50%; /* vertical center */
+  transform: translateY(-50%);
+  z-index: 10; /* ensure arrows above slides */
+  filter: invert(0%) brightness(0%); /* black color */
+}
+
 .intro-section {
   position: relative;
   font-family: "Alfa Slab One", serif;

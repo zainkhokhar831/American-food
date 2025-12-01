@@ -1,0 +1,45 @@
+@use "../custom" as *;
+
+.reservation-subtitle {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: $brown;
+}
+.reservation-title {
+  font-family: "Alfa Slab One", serif;
+  font-size: 2.2rem;
+  color: $brown;
+  letter-spacing: 0.2rem;
+}
+
+.reservation-section {
+  position: relative;
+  display: flex;
+  justify-content: center; // form horizontally center
+  align-items: center; // form vertically center relative to image
+  padding: 50px 0;
+
+  .background-image {
+    position: relative; // section ke andar naturally place ho
+    width: 100%; // original width
+    height: 100%; // original height
+    display: block;
+    z-index: 1;
+  }
+
+  .form-control {
+    height: 140%;
+  }
+
+  .form-container {
+    position: absolute; // image ke upar
+    z-index: 2;
+    width: 80%;
+    text-align: center;
+  }
+
+  .row {
+    width: 70%;
+    margin: 10rem auto;
+  }
+}
