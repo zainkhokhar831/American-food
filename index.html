@@ -16,41 +16,29 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
+   
     <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
-    <title>Buger house | Home</title>
+    <title>Burger house | Home</title>
   </head>
   <body>
     <!-- BEGIN navbar HERE  -->
-    <nav class="navbar navbar-expand-lg menus fixed-top text-first animate-top">
+    <nav class="navbar navbar-expand-lg menus fixed-top text-first animate-fade">
       <div class="container">
-        <!-- LEFT: LOGO -->
         <img
           src="images/logo.png"
-          class="logo hvr-grow img-fluid"
+          class="logo hvr-grow img-fluid animate-left"
           alt="logo image"
         />
-
-        <!-- RIGHT TOP: DELIVERY BOX -->
-        <div class="delivery-box d-none d-lg-flex">
-          <img
-            src="images/banner-icon.png"
-            class="delivery-icon img-fluid"
-            alt=""
-          />
+        <div class="delivery-box d-none d-lg-flex animate-right">
+          <img src="images/banner-icon.png" class="delivery-icon img-fluid" alt="" />
           <span class="delivery-text">Express Delivery +1 234 567 890</span>
         </div>
-
-        <!-- TOGGLER -->
         <button
           class="navbar-toggler"
           type="button"
@@ -59,25 +47,12 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- MENU LINKS -->
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav mb-2">
-            <li class="nav-item">
-              <a class="nav-link animate-fade" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link animate-fade" href="#">menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link animate-fade" href="#">our story</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link animate-fade" href="#">contact us</a>
-            </li>
+            <li class="nav-item"><a class="nav-link animate-fade" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link animate-fade" href="#">Menu</a></li>
+            <li class="nav-item"><a class="nav-link animate-fade" href="#">Our Story</a></li>
+            <li class="nav-item"><a class="nav-link animate-fade" href="#">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -85,8 +60,7 @@
     <!-- navbar END -->
 
     <!-- BEGIN INTRO-SECTION HERE  -->
-    <section id="intro" class="intro-section position-relative">
-      <!-- Background Image -->
+    <section id="intro" class="intro-section position-relative animate-fade">
       <img
         src="images/intro-bg.png"
         alt=""
@@ -95,33 +69,25 @@
 
       <div class="container position-relative">
         <div class="row align-items-center">
-          <!-- LEFT TEXT -->
           <div class="col-md-4 text-start animate-left">
             <div class="d-inline-flex align-items-center mb-3 animate-fade">
-              <p>it is a good time for the great taste of burgers</p>
+              <p>It is a good time for the great taste of burgers</p>
             </div>
-
             <h1 class="display-2 animate-left">
-              <span class="display-2--intro text-outline">burger</span>
-              <span class="display-3--intro text-outline">week</span>
+              <span class="display-2--intro text-outline">Burger</span>
+              <span class="display-3--intro text-outline">Week</span>
             </h1>
           </div>
 
-          <!-- RIGHT BURGER + PRICE -->
-          <div
-            class="col-md-8 text-center mt-4 animate-right position-relative"
-          >
-            <!-- BURGER IMAGE -->
+          <div class="col-md-8 text-center mt-4 animate-right position-relative">
             <img
               src="images/intro-image.png"
-              class="burger-image img-fluid"
+              class="burger-image img-fluid animate-scale"
               alt="burger image"
             />
-
-            <!-- PRICE BADGE (Final + Correct Placement) -->
             <img
               src="images/price.png"
-              class="price-badge img-fluid"
+              class="price-badge img-fluid animate-fade"
               alt="price"
             />
           </div>
@@ -131,275 +97,226 @@
     <!-- INTRO-SECTION END -->
 
     <!-- BEGIN DEALS HERE  -->
-    <section id="deals" class="deals">
+    <section id="deals" class="deals animate-fade">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 animate-left">
             <div class="deals-image">
               <img
                 src="images/try-it-today-1.png"
-                class="hvr-grow img-fluid"
+                class="hvr-grow img-fluid animate-scale"
                 alt="try-it-today-1"
               />
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 animate-right">
             <div class="deals-image">
               <img
                 src="images/try-it-today-2.png"
-                class="deals-image-2 hvr-grow img-fluid"
+                class="deals-image-2 hvr-grow img-fluid animate-scale"
                 alt="try-it-today-2"
               />
               <img
                 src="images/try-it-today-3.png"
-                class="hvr-grow img-fluid"
+                class="hvr-grow img-fluid animate-scale"
                 alt="try-it-today-3 "
               />
             </div>
           </div>
         </div>
 
-        <div class="deals-text text-center">
+        <div class="deals-text text-center animate-fade">
           <h4>Always taste burger</h4>
         </div>
 
-        <div class="menu display-4 text-center">
-          <h2 class="display-4--intro">choose & enjoy</h2>
+        <div class="menu display-4 text-center animate-fade">
+          <h2 class="display-4--intro">Choose & Enjoy</h2>
           <p class="display-4--description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus debitis ab, voluptas, dolor a dolore sint nihil
-            asperiores eaque error dolores! Ducimus, ipsam tempora sequi minus
-            unde magni omnis molestiae!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eveniet fuga at magnam ipsam reprehenderit itaque, praesentium similique aspernatur id! Illo minus sed earum expedita ullam architecto similique animi officia!
           </p>
         </div>
 
-        <div class="row ">
-          <div class="col-md-4">
-            <img src="images/order-1.png" class="order-image" alt="order-1" />
-            <div class="order-text text-center">
-              <h4>beef burger</h4>
+        <div class="row">
+          <div class="col-md-4 animate-left">
+            <img src="images/order-1.png" class="order-image animate-scale" alt="order-1" />
+            <div class="order-text text-center animate-fade">
+              <h4>Beef Burger</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button type="submit" class="btn mb-5">order now</button>
+              <button type="submit" class="btn mb-5">Order Now</button>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <img src="images/order-2.png" class="order-image" alt="order-1" />
-            <div class="order-text text-center">
-              <h4>chicken burger</h4>
+          <div class="col-md-4 animate-fade">
+            <img src="images/order-2.png" class="order-image animate-scale" alt="order-2" />
+            <div class="order-text text-center animate-fade">
+              <h4>Chicken Burger</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button type="submit" class="btn  mb-5">order now</button>
+              <button type="submit" class="btn mb-5">Order Now</button>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <img src="images/order-1.png" class="order-image" alt="order-1" />
-            <div class="order-text text-center">
-              <h4>beef burger</h4>
+          <div class="col-md-4 animate-right">
+            <img src="images/order-1.png" class="order-image animate-scale" alt="order-3" />
+            <div class="order-text text-center animate-fade">
+              <h4>Beef Burger</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button type="submit" class="btn  mb-5">order now</button>
+              <button type="submit" class="btn mb-5">Order Now</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- DEALS END -->
 
-    <!--  DEALS END  -->
-
-    <!-- BEGIN SLIDER HERE  -->
-
-<section class="silderr">
-<div class="container my-5 shadow-lg">
-  <div id="eventSlider" class="carousel slide" data-bs-ride="carousel">
-    
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#eventSlider" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#eventSlider" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#eventSlider" data-bs-slide-to="2"></button>
-    </div>
-
-    <!-- Slides -->
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="row align-items-center">
-          <!-- TEXT -->
-          <div class="col-lg-6 p-5">
-            <h6 class="discover-text">DISCOVER</h6>
-            <h2 class="title-text">UPCOMING EVENTS</h2>
-            <p class="desc-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-              maecenas accumsan lacus vel facilisis.
-            </p>
+    <!-- BEGIN SLIDER HERE -->
+    <section class="silderr animate-fade">
+      <div class="container my-5 shadow-lg">
+        <div id="eventSlider" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#eventSlider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#eventSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#eventSlider" data-bs-slide-to="2"></button>
           </div>
 
-          <!-- IMAGE -->
-          <div class="col-lg-6 p-0 slider-img-box">
-            <img src="images/upcoming.png" class="img-fluid w-100 slider-img" alt="Slide Image" />
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-lg-6 p-5 animate-left">
+                  <h6 class="discover-text">DISCOVER</h6>
+                  <h2 class="title-text">UPCOMING EVENTS</h2>
+                  <p class="desc-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="col-lg-6 p-0 slider-img-box animate-right">
+                  <img src="images/upcoming.png" class="img-fluid w-100 slider-img animate-scale" alt="Slide Image" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-lg-6 p-5 animate-left">
+                  <h6 class="discover-text">DISCOVER</h6>
+                  <h2 class="title-text">UPCOMING EVENTS</h2>
+                  <p class="desc-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="col-lg-6 p-0 slider-img-box animate-right">
+                  <img src="images/upcoming.png" class="img-fluid w-100 slider-img animate-scale" alt="Slide Image" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-lg-6 p-5 animate-left">
+                  <h6 class="discover-text">DISCOVER</h6>
+                  <h2 class="title-text">UPCOMING EVENTS</h2>
+                  <p class="desc-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="col-lg-6 p-0 slider-img-box animate-right">
+                  <img src="images/upcoming.png" class="img-fluid w-100 slider-img animate-scale" alt="Slide Image" />
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#eventSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#eventSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
+    </section>
+    <!-- SLIDER END -->
 
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="row align-items-center">
-          <div class="col-lg-6 p-5">
-            <h6 class="discover-text">DISCOVER</h6>
-            <h2 class="title-text">UPCOMING EVENTS</h2>
-            <p class="desc-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-              maecenas accumsan lacus vel facilisis.
-            </p>
+    <!-- BEGIN RESERVATION HERE -->
+    <section class="reservation-section py-5 animate-fade">
+      <img src="images/form-img.png" class="background-image animate-scale" alt="">
+      <div class="container text-center form-container animate-fade">
+        <h6 class="reservation-subtitle">RESERVATION</h6>
+        <h2 class="reservation-title">BOOK YOUR TABLE</h2>
+
+        <form class="row g-5 justify-content-center mt-4 ">
+          <div class="col-md-6 animate-left">
+            <input type="text" class="form-control input-box" placeholder="NAME">
           </div>
-
-          <div class="col-lg-6 p-0 slider-img-box">
-            <img src="images/upcoming.png" class="img-fluid w-100 slider-img" alt="Slide Image" />
+          <div class="col-md-6 animate-right">
+            <input type="email" class="form-control input-box" placeholder="EMAIL">
           </div>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="row align-items-center">
-          <div class="col-lg-6 p-5">
-            <h6 class="discover-text">DISCOVER</h6>
-            <h2 class="title-text">UPCOMING EVENTS</h2>
-            <p class="desc-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-              maecenas accumsan lacus vel facilisis.
-            </p>
+          <div class="col-md-6 animate-left">
+            <input type="date" class="form-control input-box">
           </div>
-
-          <div class="col-lg-6 p-0 slider-img-box">
-            <img src="images/upcoming.png" class="img-fluid w-100 slider-img" alt="Slide Image" />
+          <div class="col-md-6 animate-right">
+            <input type="time" class="form-control input-box">
           </div>
-        </div>
+          <div class="col-md-6 animate-left">
+            <input type="number" class="form-control input-box" placeholder="PEOPLE">
+          </div>
+          <div class="col-md-6 animate-right">
+            <button class="btn  form-control w-100">FIND A TABLE</button>
+          </div> 
+        </form>
       </div>
-    </div>
-
-    <!-- Carousel Controls (Arrows) -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#eventSlider" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#eventSlider" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-
-  </div>
-</div>
-</section>
-<!-- SLIDER END -->
-
-
-
-<!-- BEGIN RESERVATION HERE -->
- 
-<section class="reservation-section py-5">
-  <img src="images/form-img.png" class="background-image" alt="">
-
-  <div class="container text-center form-container">
-    <h6 class="reservation-subtitle">RESERVATION</h6>
-    <h2 class="reservation-title">BOOK YOUR TABLE</h2>
-
-    <form class="row g-5 justify-content-center mt-4 ">
-      <div class="col-md-6">
-        <input type="text" class="form-control input-box" placeholder="NAME">
-      </div>
-
-      <div class="col-md-6">
-        <input type="email" class="form-control input-box" placeholder="EMAIL">
-      </div>
-
-      <div class="col-md-6">
-        <input type="date" class="form-control input-box">
-      </div>
-
-      <div class="col-md-6">
-        <input type="time" class="form-control input-box">
-      </div>
-
-      <div class="col-md-6">
-        <input type="number" class="form-control input-box" placeholder="PEOPLE">
-      </div>
-
-      <div class="col-md-6">
-        <button class="btn  form-control w-100  ">FIND A TABLE</button>
-      </div> 
-    </form>
-  </div>
-</section>
-<!-- RESERVATION END -->
-
+    </section>
+    <!-- RESERVATION END -->
 
     <!-- BEGIN FOOTER HERE  -->
-
-    <footer class="footer-section text-white d-flex align-items-center">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-
-      <!-- LEFT SIDE -->
-      <div class="col-lg-6 col-md-6 footer-left">
-        <div class="d-flex align-items-center mb-3">
-          <img src="images/footer-logo.png" class="footer-icon" alt="icon">
+    <footer class="footer-section text-white d-flex align-items-center animate-fade">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6 col-md-6 footer-left animate-left">
+            <div class="d-flex align-items-center mb-3">
+              <img src="images/footer-logo.png" class="footer-icon" alt="icon">
+            </div>
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="col-lg-5 col-md-6 footer-right animate-right">
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-geo-alt-fill footer-contact-icon"></i>
+              <p class="footer-contact-text mb-0">MAIN ROAD, BUILDING NAME, COUNTRY</p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-envelope-fill footer-contact-icon"></i>
+              <p class="footer-contact-text mb-0">INFO@COMPANYNAME.COM</p>
+            </div>
+          </div>
         </div>
-
-        <p class="footer-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis 
-          ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas 
-          accumsan lacus vel facilisis.
-        </p>
-      </div>
-
-      <!-- RIGHT SIDE -->
-      <div class="col-lg-5 col-md-6 footer-right">
-
-        <div class="d-flex align-items-center mb-3">
-          <i class="bi bi-geo-alt-fill footer-contact-icon"></i>
-          <p class="footer-contact-text mb-0">MAIN ROAD, BUILDING NAME, COUNTRY</p>
+        <hr class="footer-line">
+        <div class="footer-bottom d-flex justify-content-between align-items-center">
+          <p class="mb-0 hvr-float-shadow">© 2025 Designed & Developed by <span>Zain Khokhar</span></p>
+          <div class="footer-social">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook mx-3"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-whatsapp ms-3"></i>
+          </div>
         </div>
-
-        <div class="d-flex align-items-center mb-3">
-          <i class="bi bi-envelope-fill footer-contact-icon"></i>
-          <p class="footer-contact-text mb-0">INFO@COMPANYNAME.COM</p>
-        </div>
-
       </div>
-
-    </div>
-
-    <hr class="footer-line">
-
-    <div class="footer-bottom d-flex justify-content-between align-items-center">
-      <p class="mb-0 hvr-float-shadow"> © 2025 Designed & Developed by <span>Zain Khokhar</span></p>
-
-      <div class="footer-social">
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-facebook mx-3"></i>
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-whatsapp ms-3"></i>
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-    <!--  FOOTER END  -->
+    </footer>
+    <!-- FOOTER END -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

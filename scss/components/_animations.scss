@@ -22,3 +22,67 @@
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
   }
 }
+
+
+// components/animation.scss
+
+// ============================================
+// 1. Fade Animations
+// ============================================
+.animate-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+  
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ============================================
+// 2. Slide from Left
+// ============================================
+.animate-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+  
+  &.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// ============================================
+// 3. Slide from Right
+// ============================================
+.animate-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease-out;
+  
+  &.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// ============================================
+// 4. Scale-Up Animation
+// ============================================
+.animate-scale {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.8s ease-out;
+  
+  &.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// ============================================
+// 5. Helper: Scroll Trigger JS (to add .active class)
+// ============================================
+// Is JS ko tum apne main JS file me add karo
