@@ -38,6 +38,58 @@
     animation: floatMotion 3s ease-in-out infinite, yellowGlowPulse 2s ease-in-out infinite;
   }
 
+  /* ============================= */
+/* RESPONSIVE FIX — ONLY ADD THIS */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+  /* LEFT TEXT CENTER */
+  #intro .col-md-4 {
+    text-align: center !important;
+    margin-bottom: 2rem;
+  }
+
+  /* HEADING CENTER */
+  #intro .display-2 {
+    text-align: center !important;
+  }
+
+  /* PRICE BADGE ADJUST */
+  .price-badge {
+    left: 35% !important;
+    width: 28% !important;
+    bottom: 18% !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* BURGER IMAGE SIZE FIX */
+  .burger-image {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  /* PRICE BADGE SMALLER ADJUST */
+  .price-badge {
+    left: 38% !important;
+    width: 32% !important;
+    bottom: 20% !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .price-badge {
+    left: 40% !important;
+    width: 35% !important;
+    bottom: 22% !important;
+  }
+}
+
+
   }
 
   

@@ -1,10 +1,13 @@
 @use "../custom" as *;
 
+
+
 .reservation-subtitle {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
   color: $brown;
 }
+
 .reservation-title {
   font-family: "Alfa Slab One", serif;
   font-size: 2.2rem;
@@ -29,6 +32,7 @@
 
   .form-control {
     height: 140%;
+    
   }
 
   .form-container {
@@ -42,4 +46,6 @@
     width: 70%;
     margin: 10rem auto;
   }
+
+  
 }

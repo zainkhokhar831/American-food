@@ -1,0 +1,81 @@
+@use "../custom" as *;
+
+.footer-section {
+  background: url("/images/footer.png") no-repeat center center/cover;
+  padding: 80px 0;
+  position: relative;
+  color: #fff;
+
+  .footer-title {
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .footer-text {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    max-width: 500px;
+  }
+
+  .footer-right {
+    .footer-contact-icon {
+      font-size: 22px;
+      margin-right: 15px;
+    }
+
+    .footer-contact-text {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 20px;
+      font-family: "Bebas Neue", sans-serif;
+      margin-left: 0.5rem;
+      letter-spacing: 0.7px;
+    }
+  }
+
+  .footer-line {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin: 40px 0 20px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    p {
+      span {
+        color: $yellow;
+        font-weight: 700;
+  
+      }
+    }
+
+    .footer-social i {
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 768px) {
+  .footer-section {
+    text-align: center;
+
+    .footer-left,
+    .footer-right {
+      margin-bottom: 30px;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

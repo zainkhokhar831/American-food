@@ -11969,7 +11969,7 @@ textarea.form-control-lg {
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
   color: #3d2514;
-  margin: 0.2rem 12.3rem 0rem 0rem;
+  margin: 0.2rem 6.8rem 0rem 0rem;
 }
 
 /* MENU RIGHT SIDE */
@@ -12040,6 +12040,92 @@ textarea.form-control-lg {
 }
 .deals .order-image {
   animation: floatMotion 3s ease-in-out infinite, 2s ease-in-out infinite;
+}
+.deals {
+  /* ============================= */
+  /*  RESPONSIVE FIX — DEALS       */
+  /*  Design same, only mobile fix */
+  /* ============================= */
+}
+@media (max-width: 992px) {
+  .deals .deals .deals-image {
+    text-align: center;
+    margin-bottom: 3rem !important;
+  }
+  .deals .deals .deals-text h4 {
+    width: auto !important;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+  }
+  .deals .deals .col-md-4 {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .deals {
+    /* Images smaller & center */
+  }
+  .deals .deals .deals-image img,
+  .deals .deals .deals-image-2 {
+    width: 90% !important;
+    margin: 0 auto;
+    display: block;
+  }
+  .deals {
+    /* Menu text smaller */
+  }
+  .deals .deals .menu .display-4--intro {
+    font-size: 2.2rem !important;
+  }
+  .deals .deals .menu .display-4--description {
+    font-size: 1rem !important;
+    padding: 0 15px;
+  }
+  .deals {
+    /* Order images smaller */
+  }
+  .deals .order-image {
+    width: 85% !important;
+    margin: 0 auto;
+    display: block;
+  }
+  .deals .order-text h4 {
+    font-size: 1.6rem !important;
+  }
+  .deals .order-text p {
+    font-size: 0.9rem !important;
+  }
+  .deals {
+    /* Buttons full width */
+  }
+  .deals .order-text .btn {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  .deals {
+    /* Small mobile adjustments */
+  }
+  .deals .deals .menu .display-4--intro {
+    font-size: 1.8rem !important;
+  }
+  .deals .deals .menu .display-4--description {
+    font-size: 0.85rem !important;
+    padding: 0 10px;
+  }
+  .deals .order-image {
+    width: 75% !important;
+  }
+  .deals .order-text h4 {
+    font-size: 1.4rem !important;
+  }
+  .deals .order-text p {
+    font-size: 0.8rem !important;
+  }
+  .deals .order-text .btn {
+    width: 90%;
+  }
 }
 
 .reservation-subtitle {
@@ -12138,6 +12224,69 @@ textarea.form-control-lg {
   filter: invert(0%) brightness(0%); /* black color */
 }
 
+.footer-section {
+  background: url("/images/footer.png") no-repeat center center/cover;
+  padding: 80px 0;
+  position: relative;
+  color: #fff;
+}
+.footer-section .footer-title {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-section .footer-text {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  max-width: 500px;
+}
+.footer-section .footer-right .footer-contact-icon {
+  font-size: 22px;
+  margin-right: 15px;
+}
+.footer-section .footer-right .footer-contact-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  margin-left: 0.5rem;
+  letter-spacing: 0.7px;
+}
+.footer-section .footer-line {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 40px 0 20px;
+}
+.footer-section .footer-bottom {
+  font-size: 14px;
+}
+.footer-section .footer-bottom p span {
+  color: #ffc045;
+  font-weight: 700;
+}
+.footer-section .footer-bottom .footer-social i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-section .footer-bottom .footer-social i:hover {
+  opacity: 0.7;
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 768px) {
+  .footer-section {
+    text-align: center;
+  }
+  .footer-section .footer-left,
+  .footer-section .footer-right {
+    margin-bottom: 30px;
+  }
+  .footer-section .footer-bottom {
+    flex-direction: column;
+  }
+  .footer-section .footer-bottom p {
+    margin-bottom: 10px;
+  }
+}
 .intro-section {
   position: relative;
   font-family: "Alfa Slab One", serif;
@@ -12169,6 +12318,58 @@ textarea.form-control-lg {
   left: 27%;
   z-index: 3;
   animation: floatMotion 3s ease-in-out infinite, yellowGlowPulse 2s ease-in-out infinite;
+}
+.intro-section {
+  /* ============================= */
+  /* RESPONSIVE FIX — ONLY ADD THIS */
+  /* ============================= */
+}
+@media (max-width: 992px) {
+  .intro-section {
+    /* LEFT TEXT CENTER */
+  }
+  .intro-section #intro .col-md-4 {
+    text-align: center !important;
+    margin-bottom: 2rem;
+  }
+  .intro-section {
+    /* HEADING CENTER */
+  }
+  .intro-section #intro .display-2 {
+    text-align: center !important;
+  }
+  .intro-section {
+    /* PRICE BADGE ADJUST */
+  }
+  .intro-section .price-badge {
+    left: 35% !important;
+    width: 28% !important;
+    bottom: 18% !important;
+  }
+}
+@media (max-width: 768px) {
+  .intro-section {
+    /* BURGER IMAGE SIZE FIX */
+  }
+  .intro-section .burger-image {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .intro-section {
+    /* PRICE BADGE SMALLER ADJUST */
+  }
+  .intro-section .price-badge {
+    left: 38% !important;
+    width: 32% !important;
+    bottom: 20% !important;
+  }
+}
+@media (max-width: 480px) {
+  .intro-section .price-badge {
+    left: 40% !important;
+    width: 35% !important;
+    bottom: 22% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
