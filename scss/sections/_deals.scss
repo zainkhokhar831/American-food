@@ -2,6 +2,7 @@
 
 .deals {
   margin-top: 5rem;
+  margin-bottom: 5rem;
 
   .deals-image {
     margin-bottom: 4rem;
@@ -11,5 +12,37 @@
     .deals-image-2 {
       margin-bottom: 2rem;
     }
+  }
+
+  .deals-text {
+    justify-items: center;
+
+    h4 {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-family: "Bebas Neue", sans-serif;
+      background-color: $yellow;
+      width: 12%;
+      padding: 0.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .order-text {
+    h4 {
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      font-family: "Bebas Neue", sans-serif;
+      color: $brown;
+      padding-bottom: 0.1rem;
+    }
+    p {
+      color: $brown;
+      padding-bottom: 0.1rem;
+    }
+  }
+
+  .order-image {
+    animation: floatMotion 3s ease-in-out infinite, 2s ease-in-out infinite;
   }
 }

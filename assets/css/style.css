@@ -11882,52 +11882,25 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 575.98px) {
-  .btn-rounded {
+  .btn {
     display: none;
   }
 }
-.btn-rounded {
+.btn {
   position: relative;
   padding: 0.55rem 1.3rem 0.55rem 1.3rem;
-  font-weight: 500;
+  font-size: 1rem;
   border: none;
-  text-transform: capitalize;
-  background-color: #3d2514;
-  border-radius: 10rem;
+  font-family: "Alfa Slab One", serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: #bf2222;
+  border-radius: 0.2rem;
   color: #fff;
   margin: 0rem 0rem 0rem 0.2rem;
 }
-.btn-rounded:hover {
-  background-color: rgb(9, 9, 220);
-  color: #fff;
-}
-
-.btn-intro {
-  position: relative;
-  padding: 0.54rem 1.3rem 0.54rem 1.3rem;
-  font-weight: 500;
-  border: none;
-  text-transform: capitalize;
-  background-color: #fff;
-  border-radius: 10rem;
-  color: #3d2514;
-  overflow: hidden;
-}
-.btn-intro:hover {
-  color: #fff;
-  transition: background 0.2s ease-in;
-}
-
-.btn-rounded-2 {
-  padding: 1rem 1.9rem 1rem 1.9rem;
-  font-weight: 600;
-  border: none;
-  background-color: #3d2514;
-  border-radius: 10rem;
-  color: #fff;
-}
-.btn-rounded-2:hover {
-  background-color: rgb(9, 9, 220);
+.btn:hover {
+  background-color: rgb(255, 40, 40);
   color: #fff;
 }
 
@@ -11951,6 +11924,22 @@ textarea.form-control-lg {
   color: #3d2514;
   display: block;
   text-transform: uppercase;
+}
+
+.display-4 {
+  margin-bottom: 5rem;
+}
+.display-4--intro {
+  font-size: 3rem;
+  font-family: "Alfa Slab One", serif;
+  color: #3d2514;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.display-4--description {
+  font-size: 1.3rem;
+  color: #3d2514;
 }
 
 /* LOGO */
@@ -12015,6 +12004,7 @@ textarea.form-control-lg {
 }
 .deals {
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .deals .deals-image {
   margin-bottom: 4rem;
@@ -12024,6 +12014,32 @@ textarea.form-control-lg {
 }
 .deals .deals-image .deals-image-2 {
   margin-bottom: 2rem;
+}
+.deals .deals-text {
+  justify-items: center;
+}
+.deals .deals-text h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #ffc045;
+  width: 12%;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+.deals .order-text h4 {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-family: "Bebas Neue", sans-serif;
+  color: #3d2514;
+  padding-bottom: 0.1rem;
+}
+.deals .order-text p {
+  color: #3d2514;
+  padding-bottom: 0.1rem;
+}
+.deals .order-image {
+  animation: floatMotion 3s ease-in-out infinite, 2s ease-in-out infinite;
 }
 
 .intro-section {
