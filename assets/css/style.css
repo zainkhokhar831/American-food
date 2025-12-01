@@ -11859,6 +11859,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@keyframes floatMotion {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @media (max-width: 575.98px) {
   .btn-rounded {
     display: none;
@@ -11914,70 +11925,74 @@ textarea.form-control-lg {
   font-family: "Alfa Slab One", serif;
 }
 .display-2--intro {
-  font-size: 6rem;
+  font-size: 7rem;
   color: #3d2514;
   display: block;
   text-transform: uppercase;
 }
 
-/* LOGO FIX */
+.display-3 {
+  margin-bottom: 1rem;
+  font-family: "Alfa Slab One", serif;
+}
+.display-3--intro {
+  font-size: 3.5rem;
+  color: #3d2514;
+  display: block;
+  text-transform: uppercase;
+}
+
+/* LOGO */
 .logo {
-  width: 9%;
-  max-width: 120px;
+  width: 15%;
 }
 
-/* NAVBAR LAYOUT FIXED */
-.navbar .container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-}
-
-/* DELIVERY BOX → RIGHT SIDE ABOVE MENU */
+/* DELIVERY BOX FIXED ABOVE MENU (RIGHT SIDE) */
 .delivery-box {
+  position: absolute;
+  right: 0rem;
+  top: -6px; /* screenshot jaisa */
   display: flex;
   align-items: center;
-  margin-left: auto; /* pushes to right side */
-  margin-right: 1rem;
-  position: relative;
-  top: -4px; /* exactly like your screenshot */
   gap: 0.5rem;
+  margin-top: 2rem;
 }
 .delivery-box .delivery-icon {
-  width: 22px;
+  width: 8%;
 }
 .delivery-box .delivery-text {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
   color: #3d2514;
+  margin: 0.2rem 12.3rem 0rem 0rem;
 }
 
-/* MENU PERFECT RIGHT */
+/* MENU RIGHT SIDE */
 .menu li {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: "Bebas Neue", sans-serif;
 }
 .menu li a {
-  line-height: 2rem;
   text-transform: capitalize;
   color: #3d2514;
   font-weight: normal;
-  font-size: 1.1rem;
-  margin-right: 2rem;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
   letter-spacing: 0.2rem;
+  margin-top: 4rem;
 }
 .menu li a:hover {
   color: #fff;
 }
 
+/* MOBILE FIXES */
 @media (max-width: 992px) {
   .navbar .container {
     justify-content: space-between;
   }
   .delivery-box {
-    display: none;
+    display: none; /* mobile par hide exactly like design */
   }
   .navbar-collapse {
     padding: 1rem;
@@ -11994,26 +12009,26 @@ textarea.form-control-lg {
   border-color: #3d2514;
   padding: 0.5rem;
   font-weight: lighter;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #3d2514;
   text-transform: uppercase;
 }
 .intro-section .text-outline {
   text-shadow: 3px 3px 0px #fff59b, 4px 4px 0px #fff59b, 4px 4px 0px #fff59b;
 }
-
-.burger-image {
+.intro-section .burger-image {
   position: relative;
   z-index: 2;
   width: 100%;
+  animation: floatMotion 3s ease-in-out infinite, yellowGlowPulse 2s ease-in-out infinite;
 }
-
-.price-badge {
+.intro-section .price-badge {
   position: absolute;
   bottom: 20%;
   width: 20%;
   left: 27%;
   z-index: 3;
+  animation: floatMotion 3s ease-in-out infinite, yellowGlowPulse 2s ease-in-out infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

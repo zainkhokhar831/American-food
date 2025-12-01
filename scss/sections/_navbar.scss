@@ -1,55 +1,49 @@
 @use '../custom' as *;
 
-/* LOGO FIX */
+/* LOGO */
 .logo {
-  width: 9%;
-  max-width: 120px;
+  width: 15%;
 }
 
-/* NAVBAR LAYOUT FIXED */
-.navbar .container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-}
 
-/* DELIVERY BOX → RIGHT SIDE ABOVE MENU */
+
+/* DELIVERY BOX FIXED ABOVE MENU (RIGHT SIDE) */
 .delivery-box {
+  position: absolute;
+  right: 0rem;
+  top: -6px;        /* screenshot jaisa */
   display: flex;
   align-items: center;
-  margin-left: auto;     /* pushes to right side */
-  margin-right: 1rem;
-  position: relative;
-  top: -4px;             /* exactly like your screenshot */
   gap: 0.5rem;
+  margin-top: 2rem;
 
   .delivery-icon {
-    width: 22px;
+    width: 8%;
   }
-
   .delivery-text {
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     color: $primary;
+    margin: 0.2rem 12.3rem 0rem 0rem;
   }
 }
 
-/* MENU PERFECT RIGHT */
+
+/* MENU RIGHT SIDE */
 .menu {
   li {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: "Bebas Neue", sans-serif;
 
     a {
-      line-height: 2rem;
       text-transform: capitalize;
       color: $primary;
       font-weight: normal;
-      font-size: 1.1rem;
-      margin-right: 2rem;
+      font-size: 1.3rem;
+      margin-left: 1.5rem;
       letter-spacing: 0.2rem;
+      margin-top: 4rem;
 
       &:hover {
         color: $white;
@@ -58,16 +52,19 @@
   }
 }
 
+/* MOBILE FIXES */
 @media (max-width: 992px) {
+
   .navbar .container {
     justify-content: space-between;
   }
 
   .delivery-box {
-    display: none;
+    display: none;   /* mobile par hide exactly like design */
   }
 
   .navbar-collapse {
     padding: 1rem;
   }
+
 }
