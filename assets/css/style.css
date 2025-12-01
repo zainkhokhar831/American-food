@@ -11984,11 +11984,11 @@ textarea.form-control-lg {
 }
 
 /* MENU RIGHT SIDE */
-.menu li {
+.menus li {
   font-size: 2rem;
   font-family: "Bebas Neue", sans-serif;
 }
-.menu li a {
+.menus li a {
   text-transform: capitalize;
   color: #3d2514;
   font-weight: normal;
@@ -11997,7 +11997,7 @@ textarea.form-control-lg {
   letter-spacing: 0.2rem;
   margin-top: 4rem;
 }
-.menu li a:hover {
+.menus li a:hover {
   color: #fff;
 }
 
